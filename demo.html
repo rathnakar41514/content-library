@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Media Library</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                padding: 20px;
+            }
+
+            .library-container {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 80%;
+                max-width: 1000px;
+                margin-bottom: 20px;
+            }
+
+            .library-container h2 {
+                text-align: center;
+            }
+
+            .media-item {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .media-item img,
+            .media-item video {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+
+            .media-item a {
+                display: block;
+                margin-top: 10px;
+                color: #007bff;
+                text-decoration: none;
+            }
+
+            .media-item a:hover {
+                text-decoration: underline;
+            }
+
+            .media-description {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="library-container">
+            <h2>Content Media Library</h2>
+
+            <div class="media-item">
+                <h3>Sample Image</h3>
+                <img src="library.webp" alt="Sample Image" />
+                <div class="media-description">
+                    <p>
+                        This is a sample image. It is a placeholder image used
+                        to demonstrate the media library.
+                    </p>
+                </div>
+            </div>
+
+            <div class="media-item">
+                <h3>Sample Video</h3>
+                <video controls>
+                    <source src="sample_video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <div class="media-description">
+                    <p>
+                        This is a sample video. It is a placeholder video used
+                        to demonstrate the media library.
+                    </p>
+                </div>
+            </div>
+
+            <div class="media-item">
+                <h3>Sample PDF</h3>
+                <a
+                    href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                    target="_blank"
+                    >View PDF</a
+                >
+                <div class="media-description">
+                    <p>
+                        This is a sample PDF. It is a placeholder PDF used to
+                        demonstrate the media library.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
